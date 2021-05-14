@@ -6,7 +6,7 @@ const NewExpense = ({ onAddExpense }) => {
   const saveExpenseDataHandler = (enteredExpenseData) => {
     const expenseData = { ...enteredExpenseData, id: Math.random().toString() };
     onAddExpense(expenseData);
-    setShowForm(false)
+    setShowForm(false);
   };
 
   const [showForm, setShowForm] = useState(false);
